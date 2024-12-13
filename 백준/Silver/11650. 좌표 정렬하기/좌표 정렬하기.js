@@ -11,7 +11,5 @@ points.sort((a, b) => {
     return a[0] - b[0];
   }
 });
-
-for (let i = 0; i < n; i++) {
-  console.log(points[i].join(" "));
-}
+const result = points.map((point) => point.join(" ")).join("\n");
+console.log(result);
