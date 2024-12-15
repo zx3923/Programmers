@@ -12,6 +12,4 @@ points.sort((a, b) => {
   }
 });
 
-for (let i = 0; i < n; i++) {
-  console.log(points[i].join(" "));
-}
+console.log(points.map((point) => point.join(" ")).join("\n"));
